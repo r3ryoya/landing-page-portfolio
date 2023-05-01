@@ -1,106 +1,73 @@
 <!DOCTYPE html>
-<html>             
-  <head>            
-    <meta charset="utf-8">            
-    <title>My portfolio</title>            
-    <link rel="stylesheet" href="style.css">  
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tokunaga Portfolio</title>
 
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
   </head>
- <body>
-<!--ここから本文HTML-->
-
-<div class="header">
-  <div class="header-logo">Portfolio site</div>
-    <div class="header-list">
-     <ul>
-      <li>About me</li>
-      <li>Work</li>
-      <li>Contact</li>
-     </ul>
-   </div>
- </div>
-</div>
-
-<div class="main">
-  <div class="title">
-  <h1>About me</h1>
-  <p>名前：徳永凌也</p>
-  <p>年齢:22歳</p>
-
-  <p>プロフィール<br></p>
-      <p>東京都出身。大学3年時から動画制作をはじめ、タレントのYouTube編集、地方番組、15秒CMなどの制作を手掛ける。<br>主にAdobe Premiere ProとAdobe Affter Efects を用いた制作やアニメーションが得意。
-      趣味は旅行とサウナ。</p>
-
-  </div>
-
-  
-
-    <div class="contents">
-      <h4 class="lesson">制作動画一覧</h4>
-
-      <div class="movie-contents">
-        
-        <iframe width="400" height="225" src="https://www.youtube.com/embed/qVZDwprSOrE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        
-        <p>中学生向けイベント『アントレクエスト』（15秒 CM）</p>
-      </div> 
-
-      <div class="movie-contents">
-        
-        <iframe width="400" height="225" src="https://www.youtube.com/embed/D_JUrhaurZo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-        <p>睡眠アプリケーション『ZYUKUMIN』紹介動画</p>
-      </div> 
-
-      <div class="movie-contents">
-        
-        <iframe width="400" height="225" src="https://www.youtube.com/embed/ZI_126A_3wM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-        <p>シェアオフィス紹介動画</p>
-      </div> 
-    </div>
-
-
-      <div class="contact-form">
-
-        <h4 class="form-contents">Contact</h4>
-
-        <p>名前</p>
-        <input>
-
-        <p>メールアドレス（＊必須）</p>
-        <input>
-
-        <p>お問い合わせ内容</p>
-        <textarea></textarea>
-
-
-        <p>＊必須項目は必ずご記入ください</p>
-        <input class="contact" type="submit"  value="送信">
-
+  <body>
+    <header>
+      <p id="header-title">Tokunaga Portfolio</p>
+      <div id="header-contents">
+        <p id="header-inquiry">お問い合わせ</p>
       </div>
-
-</div>
-
-
-
-
-
-<footer>
-<p class="footer">Portfolio</p>
-  
- 
-
-
-</footer>
-
-
-
-
-
-
-
-  
-  
-</body>
+    </header>
+    <section id="hero-image-section">
+      <div id="head-copy">
+        <h2>-動画で想いを届ける-</h2>
+        <p>デジタル</p>
+      </div>
+      <dev>
+        <img class="hero-image" src="./sample.jpg" alt="">
+      </dev>
+    </section>
+    <section id="worries-section">
+      <div id="worries-title">
+        <h2>動画に関するユーザーの悩み</h2>
+      </div>
+      <div id="worries-contents">
+        <div class="worries-image-wrapper">
+          <img class="worries-image" src="./sample.jpg" alt="">
+        </div>
+        <div class="worries-image-wrapper">
+          <img class="worries-image" src="./sample.jpg" alt="">
+        </div>
+        <div class="worries-image-wrapper">
+          <img class="worries-image" src="./sample.jpg" alt="">
+        </div>
+      </div>
+    </section>
+    <section id="solution-section">
+      <div id="solution-title">
+        <h2>解決方法</h2>
+      </div>
+      <div id="solution-contents">
+        <div class="solution-image-wrapper"><img class="solution-image" src="./sample.jpg" alt=""></div>
+        <div class="solution-image-wrapper"><img class="solution-image" src="./sample.jpg" alt=""></div>
+        <div class="solution-image-wrapper"><img class="solution-image" src="./sample.jpg" alt=""></div>
+      </div>
+    </section>
+    <section id="about-service-section">
+      <div id="about-service-title">
+        <h2>サービスについて</h2>
+      </div>
+      <div id="about-service-contents">
+        <div class="about-service-image-wrapper">
+          <p>STEP01</p>
+          <img class="about-service-image" src="./sample.jpg" alt="">
+        </div>
+        <div class="about-service-image-wrapper">
+          <p>STEP02</p>
+          <img class="about-service-image" src="./sample.jpg" alt="">
+        </div>
+        <div class="about-service-image-wrapper">
+          <p>STEP03</p>
+          <img class="about-service-image" src="./sample.jpg" alt="">
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
