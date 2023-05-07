@@ -151,5 +151,32 @@
     <section class="ctr-section">
       <button>お問い合わせフォームはこちら</button>
     </section>
+    <section class="inquiry-section">
+      <form
+        action="https://docs.google.com/forms/xxxxxxxxxxxxxxxxxxxxxxxx/formResponse"
+        method="POST"
+        target="hidden_iframe"
+        onsubmit="submitted=true"
+      >
+        <iframe name="hidden_iframe" style="display: none;" onload="if(submitted){window.location='./index.html';}"></iframe>
+        <label>
+          <span class="form-title">お名前<span class="required">必須</span></span>
+          <input type="text" name="entry.000000000" class="form-input" required>
+        </label>
+        <label>
+          <span class="form-title">メールアドレス<span class="required">必須</span></span>
+          <input type="email" name="entry.0000000000" class="form-input" required>
+        </label>
+        <label>
+          <span class="form-title">電話番号</span>
+          <input type="tel" name="entry.000000000" class="form-input">
+        </label>
+        <label>
+          <span class="form-title-textarea">お問い合わせ内容<span class="required">必須</span></span>
+          <textarea type="textarea" name="entry.00000" required></textarea>
+        </label>
+        <input type="submit" value="送信" class="submit-btn">
+      </form>
+    </section>
   </body>
 </html>
