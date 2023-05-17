@@ -1,12 +1,12 @@
 :root {
   --color-white: #fbfbfb;
-  --color-black: #000000;
-  --color-pink: #F8C1C1;
+  --color-black: #497ce9;
+  --color-pink: #ffffff;
   --color-beige: #E7E5CC;
-  --color-semi-white: #FFFFF2;
-  --color-gray: #83838399;
-  --color-green: #D7ECC7;
-  --color-orange: #f39638;
+  --color-semi-white: #497ce9;
+  --color-gray: #ffffff;
+  --color-green: #cbcbcb;
+  --color-orange: #f39638;  
 }
 
 body {
@@ -44,19 +44,27 @@ header {
 }
 
 #head-copy p {
-  margin-top: -20px;
+  margin-top: 20px;
 }
+
+#head-copy h2{
+  font-size: 50px;
+}
+
 
 .hero-image {
   width: 300px;
-  height: 250px;
+  height: 350px;
   padding-top: 50px;
   padding-bottom: 50px;
+  
+  
 }
 
 /* worries */
 #worries-section {
   background-color: var(--color-beige);
+  height: 500px;
 }
 
 #worries-title {
@@ -84,6 +92,7 @@ header {
 
   width: 0px;
   height: 100px;
+  
 }
 
 .worries-image-wrapper::before {
@@ -97,13 +106,20 @@ header {
   border-top-color: var(--color-gray); /* 矢印の色を設定 */
   border-width: 10px 6px; /* 矢印の大きさを設定 */
   margin-left: -6px; /* 矢印の横位置を微調整 */
-
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .worries-image {
   width: 300px;
   height: 300px;
-  margin: 30px 0;
+  margin: 30px 0 10px;
+  
+}
+
+.worries-image-wrapper  p {
+  margin: 0;
+  text-align: center;
+
 }
 
 
@@ -129,6 +145,20 @@ header {
   height: 300px;
   margin: 30px 0;
 }
+
+
+.solution-image-wrapper {
+  width: 300px;
+  height: 300px;
+  margin:  0 10px ;
+}
+
+
+.solution-image-wrapper p {
+  text-align: center;
+  margin: 0 ;
+}
+
 
 /* about-service */
 .about-service-section {
